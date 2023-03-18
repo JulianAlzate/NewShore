@@ -1,0 +1,13 @@
+E:\Downloads\Julian\Prueba\NewShoreAIR\BLL\bin\Debug\netcoreapp3.1\BLL.deps.json
+E:\Downloads\Julian\Prueba\NewShoreAIR\BLL\bin\Debug\netcoreapp3.1\BLL.dll
+E:\Downloads\Julian\Prueba\NewShoreAIR\BLL\bin\Debug\netcoreapp3.1\BLL.pdb
+E:\Downloads\Julian\Prueba\NewShoreAIR\BLL\obj\Debug\netcoreapp3.1\BLL.csproj.AssemblyReference.cache
+E:\Downloads\Julian\Prueba\NewShoreAIR\BLL\obj\Debug\netcoreapp3.1\BLL.AssemblyInfoInputs.cache
+E:\Downloads\Julian\Prueba\NewShoreAIR\BLL\obj\Debug\netcoreapp3.1\BLL.AssemblyInfo.cs
+E:\Downloads\Julian\Prueba\NewShoreAIR\BLL\obj\Debug\netcoreapp3.1\BLL.csproj.CoreCompileInputs.cache
+E:\Downloads\Julian\Prueba\NewShoreAIR\BLL\obj\Debug\netcoreapp3.1\BLL.dll
+E:\Downloads\Julian\Prueba\NewShoreAIR\BLL\obj\Debug\netcoreapp3.1\BLL.pdb
+E:\Downloads\Julian\Prueba\NewShoreAIR\BLL\bin\Debug\netcoreapp3.1\NLog.config
+E:\Downloads\Julian\Prueba\NewShoreAIR\BLL\bin\Debug\netcoreapp3.1\DataBase.dll
+E:\Downloads\Julian\Prueba\NewShoreAIR\BLL\bin\Debug\netcoreapp3.1\DataBase.pdb
+E:\Downloads\Julian\Prueba\NewShoreAIR\BLL\obj\Debug\netcoreapp3.1\BLL.csproj.CopyComplete
