@@ -30,9 +30,10 @@ namespace BLL.RN
 
         public FlightDTO BuscarPorId(params object[] keyValues)
         {
-            Flight modelBD = _repo.Listar.Where(x => x.IdFlight == Convert.ToInt64(keyValues[0])).FirstOrDefault();
+            Flight modelBD = _repo.BuscarPorId(keyValues);
             FlightDTO modelDTO = _mapper.Map<FlightDTO>(modelBD);
             return modelDTO;
+
         }
 
         public int Crear(FlightDTO model)

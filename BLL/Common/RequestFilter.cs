@@ -8,7 +8,7 @@ namespace BLL.Common
     {
         public string origin { get; set; }
         public string destination { get; set; }
-        public bool conMultiple { get; set; }
-        public bool conRetorno { get; set; }
+        public bool withMultiple { get; set; }
+        public bool withReturn { get; set; }
     }
 }

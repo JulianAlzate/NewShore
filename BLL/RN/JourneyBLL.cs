@@ -86,15 +86,15 @@ namespace BLL.RN
             List<JourneyResponse> journeyUser = new List<JourneyResponse>();
             TipoVuelo codApiVuelo = TipoVuelo.Unico;
             bool conEscala = false;
-            if (requestFilter.conRetorno)
+            if (requestFilter.withReturn)
             {
                 codApiVuelo = TipoVuelo.Retorno;
-                if (requestFilter.conMultiple)//Se permiten vuelos de ida y regreso con escala
+                if (requestFilter.withMultiple)//Se permiten vuelos de ida y regreso con escala
                 {
                     conEscala = true;
                 }
             }
-            else if (requestFilter.conMultiple)
+            else if (requestFilter.withMultiple)
             {
                 codApiVuelo = TipoVuelo.Multiple;
             }
@@ -196,9 +196,11 @@ namespace BLL.RN
             List<JourneyDTO> Journey = BuscarTrayectoBD(model.origin, model.destination);
             if (Journey != null && Journey.Count > 0)
             {
+                
                 foreach (JourneyDTO item in Journey)
                 {
                     JourneyResponse journeyModel = new JourneyResponse();
+                    journeyModel.Flight = new List<FlightResponse>();
                     journeyModel.Origin = item.Origin;
                     journeyModel.Destination = item.Destination;
                     journeyModel.Price = item.Price;
@@ -274,10 +276,7 @@ namespace BLL.RN
                     }
                 }
             }
-            if (Error)
-            {
-                //Guardar error en BD
-            }
+      
         }
     }
 }

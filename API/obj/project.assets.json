@@ -10392,11 +10392,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Downloads\\Julian\\Prueba\\NewShoreAIR\\API\\API.csproj",
+      "projectUniqueName": "E:\\Downloads\\Julian\\Prueba\\NewShore\\API\\API.csproj",
       "projectName": "API",
-      "projectPath": "E:\\Downloads\\Julian\\Prueba\\NewShoreAIR\\API\\API.csproj",
+      "projectPath": "E:\\Downloads\\Julian\\Prueba\\NewShore\\API\\API.csproj",
       "packagesPath": "C:\\Users\\PERSONAL\\.nuget\\packages\\",
-      "outputPath": "E:\\Downloads\\Julian\\Prueba\\NewShoreAIR\\API\\obj\\",
+      "outputPath": "E:\\Downloads\\Julian\\Prueba\\NewShore\\API\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -10419,8 +10419,8 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "E:\\Downloads\\Julian\\Prueba\\NewShoreAIR\\BLL\\BLL.csproj": {
-              "projectPath": "E:\\Downloads\\Julian\\Prueba\\NewShoreAIR\\BLL\\BLL.csproj"
+            "E:\\Downloads\\Julian\\Prueba\\NewShore\\BLL\\BLL.csproj": {
+              "projectPath": "E:\\Downloads\\Julian\\Prueba\\NewShore\\BLL\\BLL.csproj"
             }
           }
         }

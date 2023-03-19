@@ -21,7 +21,6 @@ namespace BLL.RN
     {
         private readonly IMapper _mapper;
         public Repositorio<Transport> _repo;
-
         public TransportBLL(IMapper mapper)
         {
             _mapper = mapper;
@@ -31,7 +30,7 @@ namespace BLL.RN
 
         public TransportDTO BuscarPorId(params object[] keyValues)
         {
-            Transport modelBD = _repo.Listar.Where(x => x.IdTransport == Convert.ToInt64(keyValues[0])).FirstOrDefault();
+            Transport modelBD = _repo.BuscarPorId(keyValues);
             TransportDTO modelDTO = _mapper.Map<TransportDTO>(modelBD);
             return modelDTO;
         }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "fVXJ4yzsNUnGs1FDfBz8EC7lOwkOA/S8sZkhaxzq5vjAyRPlb+fPWXXrZAum9Pjrz6T1FT43VzzYTJnuXlLMrA==",
+  "dgSpecHash": "Y4QiBw7DboG8qzgzn2YiGhWg5FLRWEC3iJ1hY/pQBsK3mZfCRLk9XJfuCxkYktVZ8dnBt+Tx9IhoRfM/rsz2hw==",
   "success": true,
-  "projectFilePath": "E:\\Downloads\\Julian\\Prueba\\NewShoreAIR\\API\\API.csproj",
+  "projectFilePath": "E:\\Downloads\\Julian\\Prueba\\NewShore\\API\\API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\PERSONAL\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\PERSONAL\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.1\\automapper.extensions.microsoft.dependencyinjection.8.1.1.nupkg.sha512",

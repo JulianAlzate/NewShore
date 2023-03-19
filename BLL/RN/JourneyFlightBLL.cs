@@ -14,6 +14,7 @@ namespace BLL.RN
     {
         private readonly IMapper _mapper;
         public Repositorio<JourneyFlight> _repo;
+        protected static readonly NLog.Logger Logger = NLog.LogManager.GetCurrentClassLogger();
 
         public JourneyFlightBLL(IMapper mapper)
         {
@@ -23,14 +24,15 @@ namespace BLL.RN
         }
         public JourneyFlightDTO BuscarPorId(params object[] keyValues)
         {
-            //JourneyFlight modelBD = _repo.Listar.Where(x => x.IdJourney == Convert.ToInt64(keyValues[0])).FirstOrDefault();
-            //JourneyFlightDTO modelDTO = _mapper.Map<JourneyFlightDTO>(modelBD);
-            //return modelDTO;
-            throw new NotImplementedException();
+            JourneyFlight modelBD = _repo.BuscarPorId(keyValues);
+            JourneyFlightDTO modelDTO = _mapper.Map<JourneyFlightDTO>(modelBD);
+            return modelDTO;
         }
 
         public int Crear(JourneyFlightDTO model)
         {
+            Logger.Error("nlog");
+
             JourneyFlightDTO existDB = ListAll().FirstOrDefault(x => x.IdFlight == model.IdFlight
             && x.IdJourney == model.IdJourney);
             if (existDB == null)

@@ -7257,11 +7257,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Downloads\\Julian\\Prueba\\NewShoreAIR\\BLL\\BLL.csproj",
+      "projectUniqueName": "E:\\Downloads\\Julian\\Prueba\\NewShore\\BLL\\BLL.csproj",
       "projectName": "BLL",
-      "projectPath": "E:\\Downloads\\Julian\\Prueba\\NewShoreAIR\\BLL\\BLL.csproj",
+      "projectPath": "E:\\Downloads\\Julian\\Prueba\\NewShore\\BLL\\BLL.csproj",
       "packagesPath": "C:\\Users\\PERSONAL\\.nuget\\packages\\",
-      "outputPath": "E:\\Downloads\\Julian\\Prueba\\NewShoreAIR\\BLL\\obj\\",
+      "outputPath": "E:\\Downloads\\Julian\\Prueba\\NewShore\\BLL\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -7284,8 +7284,8 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "E:\\Downloads\\Julian\\Prueba\\NewShoreAIR\\DataBase\\DataBase.csproj": {
-              "projectPath": "E:\\Downloads\\Julian\\Prueba\\NewShoreAIR\\DataBase\\DataBase.csproj"
+            "E:\\Downloads\\Julian\\Prueba\\NewShore\\DataBase\\DataBase.csproj": {
+              "projectPath": "E:\\Downloads\\Julian\\Prueba\\NewShore\\DataBase\\DataBase.csproj"
             }
           }
         }

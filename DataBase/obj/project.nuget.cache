@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Ie8DqD6608eKAQzyRz97/sbHPKe893ZUDETEch9oIQ5eUaJSR92C2fcnLW/iH2d8K/YVIxGLQ5fMY6X4r908cw==",
+  "dgSpecHash": "HuE1jFuQXzqB70wVLBVnFW3pGanUW1MQSJYnHmqWAtDZ1/NtzioceQdNpK9jC9A3yVvD+X8qu7HtjZCVkBawgw==",
   "success": true,
-  "projectFilePath": "E:\\Downloads\\Julian\\Prueba\\NewShoreAIR\\DataBase\\DataBase.csproj",
+  "projectFilePath": "E:\\Downloads\\Julian\\Prueba\\NewShore\\DataBase\\DataBase.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\PERSONAL\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\PERSONAL\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\5.0.17\\microsoft.aspnetcore.cryptography.internal.5.0.17.nupkg.sha512",

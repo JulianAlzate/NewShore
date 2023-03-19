@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "jftSy9scCQtHycgh5ray10MZmXBthoaag4cwN/RgSsmE4T4+I66k1Efs+gngoUF1orqk3j6jFYd/69883LlOGQ==",
+  "dgSpecHash": "RY4iidl1WFz4v40DhUwo1PzxezKczxdSLG0J4m5snL2eKOoL7FH2TTNAmmEMTWPrmi+9avddS9pH5ytYJzu08A==",
   "success": true,
-  "projectFilePath": "E:\\Downloads\\Julian\\Prueba\\NewShoreAIR\\BLL\\BLL.csproj",
+  "projectFilePath": "E:\\Downloads\\Julian\\Prueba\\NewShore\\BLL\\BLL.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\PERSONAL\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\PERSONAL\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.1\\automapper.extensions.microsoft.dependencyinjection.8.1.1.nupkg.sha512",

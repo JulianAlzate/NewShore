@@ -10,3 +10,14 @@ E:\Downloads\Julian\Prueba\NewShoreAIR\DataBase\obj\Debug\netcoreapp3.1\DataBase
 E:\Downloads\Julian\Prueba\NewShoreAIR\DataBase\obj\Debug\netcoreapp3.1\DataBase.pdb
 E:\Downloads\Julian\Prueba\NewShoreAIR\DataBase\obj\Debug\netcoreapp3.1\DataBase.genruntimeconfig.cache
 E:\Downloads\Julian\Prueba\NewShoreAIR\DataBase\obj\Debug\netcoreapp3.1\DataBase.csproj.AssemblyReference.cache
+E:\Downloads\Julian\Prueba\NewShore\DataBase\bin\Debug\netcoreapp3.1\DataBase.deps.json
+E:\Downloads\Julian\Prueba\NewShore\DataBase\bin\Debug\netcoreapp3.1\DataBase.runtimeconfig.json
+E:\Downloads\Julian\Prueba\NewShore\DataBase\bin\Debug\netcoreapp3.1\DataBase.runtimeconfig.dev.json
+E:\Downloads\Julian\Prueba\NewShore\DataBase\bin\Debug\netcoreapp3.1\DataBase.dll
+E:\Downloads\Julian\Prueba\NewShore\DataBase\bin\Debug\netcoreapp3.1\DataBase.pdb
+E:\Downloads\Julian\Prueba\NewShore\DataBase\obj\Debug\netcoreapp3.1\DataBase.AssemblyInfoInputs.cache
+E:\Downloads\Julian\Prueba\NewShore\DataBase\obj\Debug\netcoreapp3.1\DataBase.AssemblyInfo.cs
+E:\Downloads\Julian\Prueba\NewShore\DataBase\obj\Debug\netcoreapp3.1\DataBase.csproj.CoreCompileInputs.cache
+E:\Downloads\Julian\Prueba\NewShore\DataBase\obj\Debug\netcoreapp3.1\DataBase.dll
+E:\Downloads\Julian\Prueba\NewShore\DataBase\obj\Debug\netcoreapp3.1\DataBase.pdb
+E:\Downloads\Julian\Prueba\NewShore\DataBase\obj\Debug\netcoreapp3.1\DataBase.genruntimeconfig.cache

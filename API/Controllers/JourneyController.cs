@@ -7,9 +7,12 @@ using BLL.RN;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
+using NLog;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
+using System.Net.Http;
 using System.Threading.Tasks;
 
 namespace API.Controllers
@@ -19,6 +22,8 @@ namespace API.Controllers
     public class JourneyController : ControllerBase
     {
         private readonly IBusinessLogic<JourneyDTO> _journeyBLL;
+        protected static readonly Logger Logger = NLog.LogManager.GetCurrentClassLogger();
+
         public IConfigurationRoot Configuration { get; set; }
         public JourneyController(IBusinessLogic<JourneyDTO> journeyBLL)
         {
@@ -27,63 +32,48 @@ namespace API.Controllers
 
         // GET: api/<JourneyController>
         [HttpGet("{origin}/{destination}/{conEscala?}/{conRegreso?}")]
-        public IActionResult Get(string origin, string destination, bool conEscala = false,bool conRegreso = false)
+        public IActionResult Get(string origin, string destination, bool conEscala = false, bool conRegreso = false)
         {
 
-            if (string.IsNullOrEmpty(origin) || string.IsNullOrEmpty(destination))
+            string mensaje = string.Empty;
+            try
             {
-                return NotFound("No hay ingresado la informacion de origen o destino.");
+                if (string.IsNullOrEmpty(origin) || string.IsNullOrEmpty(destination))
+                {
+                    return StatusCode(HttpStatusCode.InternalServerError.GetHashCode(), "No hay ingresado la informacion de origen o destino.");
+                }
+                else
+                {
+
+                    RequestFilter requestFilter = new RequestFilter()
+                    {
+                        origin = origin,
+                        destination = destination,
+                        withMultiple = conEscala,
+                        withReturn = conRegreso
+                    };
+
+                    List<JourneyResponse> responseUser = ((IJourney)_journeyBLL).ObtenerVuelos(requestFilter);
+                    if (responseUser == null || responseUser.Count == 0)
+                    {
+                        Logger.Error("No se pudo calcular la ruta");
+                        return StatusCode(HttpStatusCode.InternalServerError.GetHashCode(), "La ruta no puede ser calculada.");
+
+                    }
+                    return Ok(responseUser);
+
+                }
 
             }
-            RequestFilter requestFilter = new RequestFilter()
+            catch (Exception ex)
             {
-                origin = origin,
-                destination = destination,
-                conMultiple = conEscala,
-                conRetorno = conRegreso
-            };
-            
-            List<JourneyResponse> responseUser = ((IJourney)_journeyBLL).ObtenerVuelos(requestFilter);
-            if(responseUser== null || responseUser.Count == 0)
-            {
-                //MENSAJE AL USUARIO
-                return NotFound("La ruta no puede ser calculada.");
+                Logger.Error(ex.Message);
+                return StatusCode(HttpStatusCode.InternalServerError.GetHashCode(), ex.Message);
+
             }
-
-            return Ok(responseUser);
-
 
         }
 
 
-        //public IEnumerable<string> Get()
-        //{
-        //    return new string[] { "value1", "value2" };
-        //}
-
-        //// GET api/<JourneyController>/5
-        //[HttpGet("{Origin}/{Destination}")]
-        //public string Get(string Origin, string Destination)
-        //{
-        //    return "value";
-        //}
-
-        //// POST api/<JourneyController>
-        //[HttpPost]
-        //public void Post([FromBody] string value)
-        //{
-        //}
-
-        //// PUT api/<JourneyController>/5
-        //[HttpPut("{id}")]
-        //public void Put(int id, [FromBody] string value)
-        //{
-        //}
-
-        //// DELETE api/<JourneyController>/5
-        //[HttpDelete("{id}")]
-        //public void Delete(int id)
-        //{
-        //}
     }
 }
